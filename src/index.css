@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('@fontsource/hepta-slab/index.css'); 
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --background-color: #DFFFFA;
+  --foreground-color: black;
+  --foreground: #171717;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+  font-family: 'Hepta Slab', Helvetica, sans-serif;
+  font-size: 1rem;
+}
