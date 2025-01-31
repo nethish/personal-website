@@ -1,29 +1,28 @@
 import './App.css';
 import Header from './Header'
 
-import Demo from './pages/demo/Demo'
 import Home from './pages/home/Home'
 import Blog from './pages/blog/Blog'
+import Work from './pages/work/Work'
 import { useLocation } from 'react-router-dom'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  return (<div>
+  return (
 
-    <div className="grid-flow-row main-layout h-full">
+    <div className="flex flex-col h-full">
       <Header />
 
-      <div>
+      <div className='flex-grow'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/demo" element={<Demo />} />
+          <Route path="/work" element={<Work />} />
         </Routes>
       </div> 
 
     </div>
-  </div>
 
   )
 }

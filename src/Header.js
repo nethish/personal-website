@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom'
 
-let pageNames = ['home', 'blog', 'tags', 'work', 'demo']
+let pageNames = ['home', 'blog', 'work']
 pageNames = pageNames.reverse()
 
 export default function Header() {
@@ -10,7 +10,6 @@ export default function Header() {
     if (pathname == '' || pathname == '/') {
         pathname = 'home'
     }
-    console.log(pathname)
     let pages = [];
     for (let i = 0; i < pageNames.length; ++i) {
         let style = "";
