@@ -1,11 +1,9 @@
-import './Blog.css'
+import Markdown from 'react-markdown'
 
 
 // A blog should have title, and content
-export default function Blog(blog) {
+export default function Blog(props) {
     return <div className="">
-        <div className="">blog.title</div>
-        <div className=""></div>
-        <div className=''>blog.content</div>
+        <Markdown>{props.content}</Markdown>
     </div>
 }

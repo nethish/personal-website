@@ -8,6 +8,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+  font-family: 'Hepta Slab', Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 :root {
@@ -20,9 +25,6 @@ html, body {
   height: 100%;
 }
 
-body {
-  color: var(--foreground-color);
-  background-color: var(--background-color);
-  font-family: 'Hepta Slab', Helvetica, sans-serif;
-  font-size: 1rem;
+#root {
+  height: 100%;
 }
